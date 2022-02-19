@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Numbers</title>
+  </head>
+  <body>
+    <h1>Name and group</h1>
+
+    <button type="button" onclick="display()">Today's date</button>
+     <p id="date"></p>
+    <form>
+      1st Number : <input type="text" id="firstNumber" /><br>
+      2nd Number: <input type="text" id="secondNumber" /><br>
+      <input type="button" onClick="multiplyBy()" Value="Multiply" />
+      <input type="button" onClick="divideBy()" Value="Divide" />
+    </form>
+    <p>Result: <br>
+      <span id = "result"></span>
+    </p>
+
+    <script>
+    document.querySelector("h1").innerHTML = "Arailym CS-2119";
+function display()
+{
+document.getElementById('date').innerHTML = Date();
+}
+document.querySelector("h3").innerHTML = "876 days left until the freedom!"
+function multiplyBy() {
+      num1 = document.getElementById("firstNumber").value;
+      num2 = document.getElementById("secondNumber").value;
+      document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() {
+      num1 = document.getElementById("firstNumber").value;
+      num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+    </script>
+  </body>
+</html>
